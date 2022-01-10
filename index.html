@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>大屏可视化项目</title>
+  <script>
+    const clientWidth = document.documentElement.clientWidth  //设备宽度
+    const clientHeight = document.documentElement.clientHeight  //设备高度
+    console.log(clientWidth/clientHeight)  //设备宽高比
+    const pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth //页面宽度
+    const pageHeight = pageWidth / (16 / 9)  //页面高度
+    console.log(pageWidth/pageHeight)     //页面展示的宽高比  应该是16/9=1.77777
+    const string = `<style>html{   
+      font-size: ${pageWidth / 100}px
+    }</style>`               //设置1 rem=页面跨度/100  写到head的style里面
+    document.write(string)
+  </script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  root.style.width = pageWidth + 'px'
+  root.style.height = pageHeight + 'px'
+  root.style.marginTop = (clientHeight - pageHeight) / 2 + 'px'
+</script>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
