@@ -9,7 +9,7 @@
     const clientWidth = document.documentElement.clientWidth  //设备宽度
     const clientHeight = document.documentElement.clientHeight  //设备高度
     console.log(clientWidth/clientHeight)  //设备宽高比
-    const pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth //页面宽度
+    window.pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth //页面宽度
     const pageHeight = pageWidth / (16 / 9)  //页面高度
     console.log(pageWidth/pageHeight)     //页面展示的宽高比  应该是16/9=1.77777
     const string = `<style>html{   
