@@ -27,23 +27,23 @@ export const Chart2 = () => {
         }
       },
       series: [
-        {
+        {   //柱形图1
           name: '2011年',
           type: 'bar',
           data: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-          itemStyle: {
+          itemStyle: {  //添加柱形图的渐变
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{ //从(0,0)到(1,0)点
                 offset: 0,
-                color: '#2034f9'
+                color: '#2034f9'  //颜色1
               }, {
                 offset: 1,
-                color: '#04a1ff'
+                color: '#04a1ff'  //颜色2
               }]),
             }
           }
         },
-        {
+        {  //柱形图2
           name: '2012年',
           type: 'bar',
           data: [2, 3, 4, 5, 6, 7, 8, 9, 10],
