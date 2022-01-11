@@ -6,7 +6,7 @@ import {px} from '../shared/px';
 export const Chart3 = () => {
   const divRef = useRef(null);
   useEffect(() => {
-    var myChart = echarts.init(divRef.current);
+    let myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartsOptions({
       legend: {
         bottom: px(10),

@@ -6,7 +6,7 @@ import {px} from '../shared/px';
 export const Chart4 = () => {
   const divRef = useRef(null);
   useEffect(() => {
-    var myChart = echarts.init(divRef.current);
+    let myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartsOptions({
       xAxis: {
         type: 'category',

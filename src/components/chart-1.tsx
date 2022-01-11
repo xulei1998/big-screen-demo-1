@@ -32,9 +32,9 @@ export const Chart1=()=>{
       },
       grid: {  //柱形图和外边框之间的距离
         x: px(40),  //px根据屏幕的大小变化
-        y: px(40),
-        x2: px(40),
-        y2: px(40),
+        y: px(10),
+        x2: px(30),
+        y2: px(50),
       },
       yAxis: {
         splitLine: {  //横轴条纹刻度
