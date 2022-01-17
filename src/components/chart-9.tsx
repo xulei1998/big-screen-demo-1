@@ -12,7 +12,9 @@ export const Chart9 = () => {
       xAxis: {
         type: 'category',
         boundaryGap: false,
-        data: [0, 18, 28, 38, 48, 58, 68, 78],
+        data: ['11-12','11-17',' 11-22','11-27','12-02',
+               '12-07','12-12','12-17','12-22','12-27',
+               '01-01','01-06','01-11'],
         splitLine: {show: true, lineStyle: {color: '#073E78'}},
         axisTick: {show: false},
         axisLine: {show: false},
@@ -22,16 +24,16 @@ export const Chart9 = () => {
         splitLine: {lineStyle: {color: '#073E78'}},
         axisLabel: {
           formatter(val) {
-            return val * 100 + '%';
+            return val;
           }
         }
       },
       series: [{
         type: 'line',
         data: [
-          0.19, 0.20, 0.26,
-          0.35, 0.26, 0.20,
-          0.08, 0.06
+          3200,3250,3000,2800,3000,
+          3200,3500,3800,4050,4400,
+          5500,6200,6641
         ],
         symbol: 'circle',
         symbolSize: px(12),
@@ -51,7 +53,6 @@ export const Chart9 = () => {
 
   return (
     <div className="年龄段-图3">
-      <h3>犯罪年龄趋势图</h3>
       <div ref={divRef} className="chart">
 
       </div>

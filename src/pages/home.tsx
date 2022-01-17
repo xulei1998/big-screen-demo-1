@@ -15,7 +15,6 @@ import {Chart10} from '../components/chart-10';
 import {Chart11} from '../components/chart-11';
 import {Chart12} from '../components/chart-12';
 import {Chart13} from '../components/chart-13';
-import {Chart14} from '../components/chart-14';
 
 
 export const Home = () => {
@@ -29,42 +28,37 @@ export const Home = () => {
           <Chart2 />
         </section>
         <section className="section2">
-          <Chart3/>
+
           <Chart4/>
         </section>
         <section className="bordered section3">
-          <Chart5/>
+          <Chart3/>          
         </section>
         <section className="section4">
           <Chart6/>
           <div className="bordered 年龄段">
-            <h2>犯罪人员年龄段分布</h2>
+            <h2>国内现有确诊趋势</h2>
             <div className="charts">
-              <Chart7/>
-              <Chart8/>
               <Chart9/>
             </div>
           </div>
         </section>
         <section className="section5">
           <div className="bordered row1 案发类型">
-            <h2>案发类型统计</h2>
+            <h2>海外重点国家疫情数据</h2>
             <div className="charts">
-              <Chart10/>
-              <Chart11/>
+              <Chart8/>
             </div>
           </div>
+          
           <div className="bordered row2 案发街道">
-            <h2>案发街道统计</h2>
+            <h2>近期国内风险地区疫情动态</h2>
             <div className="charts">
-              <Chart12/>
-              <Chart13/>
+              <Chart5/>
             </div>
           </div>
-          <div className="bordered row3 作案手段">
-            <h2>作案手段分析</h2>
-            <Chart14/>
-          </div>
+
+          
         </section>
       </main>
       <footer>

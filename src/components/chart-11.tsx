@@ -5,7 +5,7 @@ import {px} from '../shared/px';
 
 export const Chart11 = () => {
   const divRef = useRef(null);
-  const colors = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];
+  const colors = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#9b1e64','red','blue','green'];
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartsOptions({
@@ -15,7 +15,7 @@ export const Chart11 = () => {
       legend: {show: false},
       series: [
         {
-          startAngle: -20,
+          startAngle: -40,
           type: 'pie',
           radius: ['25%', '90%'],
           avoidLabelOverlap: false,
@@ -33,10 +33,14 @@ export const Chart11 = () => {
             shadowColor: 'rgba(0, 0, 0, 0.5)'
           },
           data: [
-            {value: 0.36, name: '刑事案件'},
-            {value: 0.20, name: '民事案件'},
-            {value: 0.18, name: '经济案件'},
-            {value: 0.24, name: '其他案件'},
+            {value: 0.20, name: '美国'},
+            {value: 0.12, name: '印度'},
+            {value: 0.06, name: '巴西'},
+            {value: 0.047, name: '英国'},
+            {value: 0.0392, name: '法国'},
+            {value: 0.0342, name: '俄罗斯'},
+            {value: 0.0004, name: '中国'},
+            {value: 0.49, name: '其他国家和地区'},
           ]
         }
       ]
@@ -49,10 +53,15 @@ export const Chart11 = () => {
         <div className="main" ref={divRef}/>
       </div>
       <div className="legend">
-        <span style={{background: colors[0]}} />刑事
-        <span style={{background: colors[1]}} />民事
-        <span style={{background: colors[2]}} />经济
-        <span style={{background: colors[3]}} />其他
+        <span style={{background: colors[0]}} />美国
+        <span style={{background: colors[1]}} />印度
+        <span style={{background: colors[2]}} />巴西
+        <span style={{background: colors[3]}} />英国
+        <span style={{background: colors[4]}} />法国
+        <span style={{background: colors[5]}} />俄罗斯
+        <span style={{background: colors[6]}} />中国
+        <span style={{background: colors[7]}} />其他国家和地区
+
       </div>
     </div>
   );

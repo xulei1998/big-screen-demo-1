@@ -101,13 +101,10 @@
       flex-direction: column;
       justify-content: space-between;
       > .row1 {
-        height: px(317);
+        height: px(417);
       }
       > .row2 {
-        height: px(317);
-      }
-      > .row3 {
-        height: px(455);
+        height: px(700);
       }
     }
 
@@ -204,6 +201,9 @@
         }
       }
     }
+    .战果 .red {
+      color: rgba(250, 76, 76);
+    }
     .籍贯 {
       height: px(753);
       background-color: #010310;
@@ -240,6 +240,10 @@
           position: absolute;
           bottom: px(10);
           right: px(10);
+          a {
+            text-decoration: none;
+            color: rgb(121, 151, 241);
+          }
         }
       }
     }
@@ -291,14 +295,6 @@
         flex-shrink: 0;
         .legend {
           justify-content: flex-start;
-        }
-      }
-      &-图3 {
-        border: 1px solid #08397d;
-        h3 {
-          font-size: px(20);
-          color: #7ab6db;
-          margin-top: px(6);
         }
       }
     }

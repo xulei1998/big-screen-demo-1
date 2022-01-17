@@ -71,7 +71,7 @@ export const Chart6 = () => {
 
   return (
     <div className="bordered 籍贯">
-      <h2>全市犯罪人员籍贯分布地</h2>
+      <h2>各省新冠病毒疫情病例分布（统计截至2022-01-11）</h2>
       <div className="wrapper">
         <div ref={divRef} className="chart"/>
         <div className="legend bordered">
@@ -79,7 +79,7 @@ export const Chart6 = () => {
           <span className="icon" style={{background: colors['四川省']}}/>四川籍
           <span className="icon" style={{background: colors['青海省']}}/>青海籍
         </div>
-        <div className="notes">此地图仅显示中国部分区域</div>
+        <div className="notes"><p>数据来源：<a href='https://news.qq.com/zt2020/page/feiyan.htm#/' target='_blank'>腾讯新闻</a></p><p> 此地图仅显示中国部分区域</p></div>
       </div>
     </div>
   );
